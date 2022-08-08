@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-size: 13px;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: hsl(210, 46%, 95%);
+}
+
+.gridContainer{
+    max-width: 1100px;
+    margin: 40px;
+    display: grid;
+    grid-template-columns: 23.5% 23.5% 23.5% 23.5%;
+    grid-template-rows: 50% 50%;
+    grid-gap: 4% 2%;
+    margin-bottom: 5vh;
+}
+
+.item1{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: hsl(263, 55%, 52%);
+    position: relative;
+}
+
+.item2{
+    grid-column-start: 3;
+    background-color: hsl(217, 19%, 35%);
+}
+
+.item3{
+    grid-column-start: 1;
+    background: white;
+}
+
+.item4{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    background: hsl(219, 29%, 14%);
+}
+
+.item5{
+    grid-column-start: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    background-color: white;
+}
+
+.box{
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 40px 60px 50px -45px rgb(72 85 106 / 30%);
+}
+
+.persons{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 16px;
+    position: relative;
+    z-index: 2;
+}
+
+img{
+    width: 36px;
+    border-radius: 50%;
+}
+
+.border{
+    border: solid 2px hsl(263, 44%, 58%);
+}
+
+h2{
+    font-size: 20px;
+    margin-bottom: 20px;
+    z-index: 2;
+    position: relative;
+    font-weight: 600;
+}
+.quotation{
+    position: absolute;
+    opacity: 90%;
+    z-index: 1;
+    right: 3vw;
+    top: 0;
+}
+
+span>p{
+    color: hsl(219, 29%, 14%);
+    opacity: 50%;
+}
+
+
+div>p{
+    color: hsl(219, 29%, 14%);
+    opacity: 70%;
+    line-height: 1.5;
+}
+
+.white>div>span>h3{
+    color: white;
+}
+
+.white>h2{
+    color: white;
+}
+
+.white>div>span>p{
+    color: white;
+    opacity: 50%;
+}
+.white>p{
+    color: white;
+    opacity: 70%;
+    line-height: 1.5;
+}
+
+.attribution {
+    font-size: 11px; text-align: center;
+    margin-bottom: 25px;
+}
+.attribution a{
+    color: hsl(228, 45%, 44%); 
+}
+
+@media (max-width: 800px){
+    .gridContainer{
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        margin: 60px 25px;
+    }
+}
